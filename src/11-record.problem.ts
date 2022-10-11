@@ -1,7 +1,8 @@
 import { expect, it } from "vitest";
+import { R } from "vitest/dist/global-60f880c6";
 
 const createCache = () => {
-  const cache = {};
+  const cache: Record<string, string> = {};
 
   const add = (id: string, value: string) => {
     cache[id] = value;

@@ -3,13 +3,14 @@ interface User {
   firstName: string;
   lastName: string;
   role: "admin" | "user" | "super-admin";
-  posts: Post;
+  posts: Post[];
 }
 
 interface Post {
   id: number;
   title: string;
 }
+
 
 export const defaultUser: User = {
   id: 1,
